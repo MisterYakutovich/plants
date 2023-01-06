@@ -1,0 +1,202 @@
+/* inika-regular - latin */
+@font-face {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/inika-v21-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inika-v21-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inika-700 - latin */
+  @font-face {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/inika-v21-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inika-v21-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inter-regular - latin */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/inter-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inter-700 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  body {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    font-size: 16px;
+    min-width: 1440px;
+    margin: 0px;
+  }
+  html {
+    box-sizing: border-box;
+  }
+  *,*::before,*::after{
+    box-sizing: inherit;
+  }
+  .header {
+    position: relative;
+    height: 134px;
+    left: 0px;
+    top: 0px;
+    background-color: #EDF2EC;
+  }
+  .wrapper {
+    max-width: 1222px;
+    margin: 0 auto;
+  }
+  .header_wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    top: 42px;
+  }
+  .header_list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+  .header_item {
+    margin-right: 46px;
+   
+  }
+  .header_item:last-child {
+    margin-right: 0;
+  }
+  .header_link {
+   color: #010201;
+   text-decoration: none;
+  }
+  .header_link_home {
+    color: #E06733;
+    text-decoration: none;
+  }
+  .header_link:hover, .header_link:focus, .header_link:active {
+    opacity: 50%;
+  }
+
+  /*----section welcome-------*/
+  .welcome {
+    position: relative;
+    height: 532px;
+    left: 0px;
+    top: 0px;
+    background-color: #EDF2EC;
+  }
+  .welcome_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    height: 407.36px;
+    top: 62px;
+    max-width: 1222px;
+    margin: 0 auto;
+  }
+  .leafs_logo {
+    position: relative;
+    width: 448.8px;
+    height: 407.36px;
+  }
+  .welcome_section_title {
+    position: relative;
+    width: 549px;
+    height: 340px;
+    top: 36px;
+  }
+  /*.welcome_section_h1 {
+    position: absolute;
+    margin-bottom: 36px;
+    height: 101px;
+    vertical-align: 0px;    
+  }*/
+  .title {
+    position: relative;
+    top: -36px;
+    height: 101px;
+    font-family: "Inter";
+    font-style: normal;
+    font-size: 45px;
+    font-weight: 700;
+    color: #717171;
+    line-height: 50px;
+  }
+  .description {
+    position: relative;
+    width: 525.44px;
+    height: 105px;
+    margin-top:  -42px;    
+  }
+  .description_text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    color: #636060;
+    width: 525.44px;
+    height: 105px;
+  }
+  .button {
+    position: absolute;
+    width: 158px;
+    height: 44px;
+    top: 296px;
+    box-sizing: border-box;
+    border: 2px solid #E06733;
+    border-radius: 10px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+  /*-----section about-------*/
+
+  .about{
+    position: relative;
+    height: 666px;
+    left: 0px;
+    top: 0px;
+    background-color: #FFFFFF;
+  }
+  .about_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    height: 479px;
+    top: 93px;
+    max-width: 1222px;
+    margin: 0 auto;
+  }
+  .houseplant_png {
+    width: 464px;
+    height: 479px;
+  }
+  
