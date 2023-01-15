@@ -309,8 +309,7 @@
     margin: 0px;
   }
   .item_title_description {
-    position: relative;
-    top: 10px;
+    margin-top: 10px;
     width: 267.19px;
     height: 20px;
     margin-left: auto;
@@ -328,8 +327,6 @@
     object-fit: cover;  
   }
   .item_title {
-    position: absolute;
-    top: 360px;
     width: 120px;
     height: 24px;
     font-family: "Inter";
