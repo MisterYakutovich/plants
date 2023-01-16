@@ -97,7 +97,7 @@
     text-decoration: none;
   }
   .header_link:hover, .header_link:focus, .header_link:active {
-    opacity: 50%;
+    color: #E06733;
   }
 
   /*----section welcome-------*/
@@ -179,6 +179,14 @@
     font-size: 16px;
     line-height: 20px;
     text-align: center;
+    transition: all 500ms ease;
+    cursor: pointer;
+   /* transition: 1s;*/
+  }
+  .button:hover {
+    /*transform: scale(1.1);*/
+    background-position: 0 100%;
+    background-color: #499A18;
   }
   /*-----section about-------*/
 
@@ -286,7 +294,14 @@
     font-size: 20px;
     line-height: 26px;
     color: #E06733;
+    transition: all 500ms ease;
+    cursor: pointer;
   }
+  .button_item:hover {
+    background-position: 0 100%;
+    background-color: #499A18;
+  }
+
   .button_item:last-child {
     margin-right: 0px;
   }
@@ -424,6 +439,7 @@
   border-width: 0 2px 2px 0;
   padding: 4px; 
   transform: rotate(45deg);
+  cursor: pointer;
 }
 .text_title_gardeners {
   width: 452px;
@@ -455,6 +471,12 @@
   color: #E06733;
   font-family: "Inika";
   font-style: normal;
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+.button_contact_us:hover {
+  background-position: 0 100%;
+  background-color: #499A18;
 }
 .leafs_logo_small {
   position: relative;
@@ -511,6 +533,7 @@
   background: #D6E7D2;
   box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
   border-radius: 0px;
+  cursor: pointer;
 }
 .text_city {
   position: relative;
@@ -530,7 +553,7 @@
 .accordion_btn_city {
   position: relative;
   bottom: 23px;
-  left: 339px;
+  left: 400px;
   width: 2px;
   height: 2px;
   transform: rotate(45deg);
@@ -604,7 +627,16 @@
   line-height: 50px;
   color: #000000;
 }
-.column-center p {
+.left_list_item, .github {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  color: #000000;
+  text-decoration: none;
+}
+.column-center a {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -612,6 +644,7 @@
   line-height: 50px;
   color: #000000;
   margin: 0px;
+  text-decoration: none;
 }
 .social_list {
   position: relative;
