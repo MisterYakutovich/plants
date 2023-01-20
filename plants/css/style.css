@@ -40,7 +40,7 @@
     font-weight: 400;
     line-height: 50px;
     font-size: 16px;
-    min-width: 1440px;
+   /*min-width: 1440px;*/
     margin: 0px;
     padding: 0px;
   }
@@ -60,6 +60,7 @@
   .wrapper {
     max-width: 1222px;
     margin: 0 auto;
+    padding: 0 50px; 
   }
   .header_wrapper {
     position: relative;
@@ -98,6 +99,34 @@
   }
   .header_link:hover, .header_link:focus, .header_link:active {
     color: #E06733;
+  }
+  .header_burger {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 24px;
+  }
+  .burger_line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0px;
+    left: 0px;
+    border: 2px solid #717171;
+  }
+  .burger_line_1 {
+    top: 0;
+  }
+  .burger_line_4 {
+    bottom: 0;
+  }
+  .burger_line_3 {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .burger_line_2 {
+    top: -50%;
+    transform: translateY(50%);
   }
 
   /*----section welcome-------*/
@@ -496,8 +525,8 @@
 }
 .contact_us_wrapper {
   max-width: 1222px;
-  height: 550px;
   margin: 0 auto;
+  height: 550px;
 }
 .contact_woman {
   position: relative;
@@ -573,8 +602,8 @@
   position: relative;
   top: 40px;
   max-width: 1222px;
-  height: 50px;
   margin: 0 auto;
+  height: 50px;
   border-width: medium;
  }
 .column-left { 
@@ -657,7 +686,262 @@
   margin: 0;
   height: 50px;
 }
+/*-----Media start------*/
+@media screen and (max-width:768px) {
+  .header {
+    height: 117px;
+  }
+  .wrapper {
+    padding: 0 50px;
+  }
+  .header_wrapper {
+    height: 47px;
+  }
+  .header_burger {
+    display: block;
+  }
+  .navbar {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #717171;
+    padding: 50px;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: .2s all linear;
+  }
+  .navbar_active {
+    transform: translateX(0);
+  }
+  .header_list {
+    position: absolute;
+    top: 150px;
+  }
+  .header_item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .header_item:last-child {
+    margin-bottom: 0;
+  }
+  .header_link {
+    font-size: 35px;
+  }
+  .header_link_home {
+    font-size: 35px;
+  }
+  .header_nav_close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    float: right;
+    z-index: 12;
+  }
+  .header_close_line {
+    width: 100%;
+    display: block;
+    background-color: #E06733;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+  }
+  .header_close_line:first-child {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .header_close_line:last-child {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  /*-----welcome media-----*/
+  .welcome {
+    height: 420px;
+    width: 768px;
+    background: #EDF2EC;
+  }
+  .welcome_wrapper {
+    height: 310px;
+    top: 40px;
+    padding: 0 50px;
+  }
+  .leafs_logo {
+    width: 280px;
+    height: 254.15px;
+  }
+  .welcome_section_title {
+    width: 346px;
+    height: 310px;
+    top: 0;
+  }
+  .title {
+    width: 341px;
+    top: -36px;
+    font-size: 35px;
+  }
+  .description {
+    width: 341px;
+  }
+  .description_text {
+    font-size: 16px;
+    line-height: 25px;
+    width: 341px;
+  }
+  .button {
+    top: 266px;
+    
+  }
+  /*--------about media--------*/
+  .about {
+    height: 783px;
+  }
+  .about_wrapper {
+    display: inline-block;
+    padding: 0 50px;
+    height: 350px;
+    top: 40px;
+    min-width: 768px;
+  }
+  .about_section_title {
+    top: 0px;
+    min-width: 668px;
+  }
+  .about_title {
+    width: 423px;
+    font-size: 35px;
+    line-height: 46px;
+    text-align: center;
+    top: 0;
+    margin: auto;
+  }
+  .about_description {
+    width: 668px;
+    top: 59px;
+  }
+  .houseplant_png {
+    position: relative;
+    display: block;
+    width: 250px;
+    height: 258px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 40px; 
+  }
+  /*------servis media-----*/
+  .service {
+    height: 1780px;
+  }
+  .service_wrapper {
+    padding: 0 50px;
+    top: 60px;
+    height: 1650px;
+  }
+  .services_content {
+    display: inline-block;
+    width: 559px;
+    height: 184px;
+  }
+  .services_text {
+    font-size: 35px;
+    line-height: 46px;
+  }
+  .services_button {
+    top: 134px;
+  }
+  .services_items {
+    top: 224px;
+  }
+  .services_items {
+    height: 1426px;
+    grid-template-columns: repeat(2,280px);
+    row-gap: 38px;
+    column-gap: 107px;
+  }
+  .img_items {
+    width: 280px;
+    border-radius: 20px 20px 20px 20px;
+    border: 1px solid #E3E1D5;
+  }
+  .img_items img {
+    width: 280px;
+    border-radius: 20px 20px 0 0;  
+  }
+  /*-----prices medium----*/
+  .prices {
+    height: 585px;
+  }
+  .prices_wrapper {
+    height: 456px;
+    padding: 0 50px;
+  }
+  .prices_item {
+    height: 282px;
+    top: 50px;
+  }
+  .prices_info h2 {
+    font-size: 35px;
+    line-height: 42px;
+  }
+ .block_right {
+  position: relative;
+  width: 296px;
+  height: 357.98px;
+  top: 100px;
+ }
+ .text_title_gardeners {
+  width: 296px;
+  height: 77.41px;
+  font-size: 25px;
+  line-height: 35px;
+ }
+ .text_call_us {
+  width: 296px;
+ }
+ .button_contact_us {
+  top: 21.59px;
+ }
+ .leafs_logo_small {
+  top: 0;
+ }  
 
+ /*-----contact us media-----*/
+ .contact_us {
+  height: 739px;
+ }
+ .contact_us_wrapper {
+  height: 100%;
+ }
+ .contact_woman {
+  width: 200px;
+  height: 248.99px;
+  top: 487px;
+  left: 244px;
+ }
+ .contact_woman img {
+  width: 200px;
+  height: 248.99px;
+  /*margin: 487px 224px 0 244px ;*/
+ 
+ }
+ .contacts_container {
+  position: absolute;
+  right: 20.81%;
+  bottom: 498px;
+ }
+ .text_contact_us {
+  position: absolute;
+  top: 40px;
+  left: 287px;
+ }
+ /*----foter media----*/
+ .footer {
+  height: 181px;
+ }
+}
+  
+
+/*-----Media end------*/
 
  
 
