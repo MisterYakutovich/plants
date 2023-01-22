@@ -7,7 +7,6 @@
     <meta name="description" content="Plants">
     <meta name="author" content="MisterYakutovich">
     <link rel="stylesheet" href="./css/style.css">
-    <script defer src="index.js"></script>
     <link rel="icon" href="./img/logo_svg/logo.svg">   
     <title>Plants</title>
 </head>
@@ -23,19 +22,19 @@
             <nav class="navbar">
                 <ul class="header_list">
                     <li class="header_item">
-                        <a href="#!" class="header_link_home">Home</a>
+                        <a href="#home" class="header_link_home js-scroll">Home</a>
                     </li>
                     <li class="header_item">
-                        <a href="#!" class="header_link">About us</a>
+                        <a href="#about_us" class="header_link js-scroll">About us</a>
                     </li>
                     <li class="header_item">
-                        <a href="#!" class="header_link">Service</a>
+                        <a href="#service_1" class="header_link js-scroll">Service</a>
                     </li>
                     <li class="header_item">
-                        <a href="#!" class="header_link">Price</a>
+                        <a href="#price" class="header_link js-scroll">Price</a>
                     </li>
                     <li class="header_item">
-                        <a href="#!" class="header_link">Contacts</a>
+                        <a href="#contacts" class="header_link js-scroll">Contacts</a>
                     </li>
                 </ul>
                 <div class="header_nav_close">
@@ -53,7 +52,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="welcome">       
+        <section class="welcome" id="home">       
                 <div class="welcome_wrapper">
                     <img src="./img/logo_svg/leafs.svg" alt="leafs" class="leafs_logo">
                     <div class="welcome_section_title">                       
@@ -69,7 +68,7 @@
                     </div>
                 </div>               
         </section>
-        <section class="about">
+        <section class="about" id="about_us">
             <div class="about_wrapper">               
                 <div class="about_section_title">
                     <h2 class="about_title">We are <span>professional experienced</span> gardeners</h2>
@@ -80,7 +79,7 @@
                 <img src="./img/png/houseplant_1.png" alt="houseplant" class="houseplant_png">
             </div>
         </section>
-        <section class="service">
+        <section class="service" id="service_1">
             <div class="service_wrapper">
                 <div class="services_content">
                     <div>
@@ -126,7 +125,7 @@
                 </div>  
             </div>
         </section>
-        <section class="prices">
+        <section class="prices" id="price">
             <div class="prices_wrapper">
                 <div class="prices_info">
                     <h2>Prices</h2>
@@ -156,7 +155,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact_us">
+        <section class="contact_us" id="contacts">
             <div class="contact_us_wrapper">
                 <div class="contact_woman">
                     <img src="./img/png/contact_woman.png" alt="contact woman">
@@ -209,5 +208,6 @@
             </div>
         </div>
     </footer>
+    <script  src="index.js"></script>
 </body>
 </html>
