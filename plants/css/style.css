@@ -42,12 +42,14 @@
     font-size: 16px;
    /*min-width: 1440px;*/
     margin: 0px;
-    padding: 0px;
+    padding: 0px;  
   }
-  html {
+  html { 
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
+ 
+ 
   *,*::before,*::after{
     box-sizing: inherit;
   }
@@ -689,7 +691,7 @@
   height: 50px;
 }
 /*-----Media start------*/
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1200px) {
  .wrapper {
   padding: 0 50px;
  }
@@ -1297,6 +1299,127 @@
     margin-right: 2.71px;
   }
 }
+@media screen and (max-width:360px){
+  .welcome_wrapper {
+    padding: 0 10px;
+  }
+  .welcome_section_title {
+    width: 100%;
+  }
+  .title {
+    width: 100%;
+  }
+  .description {
+    width: 100%;
+  }
+  .description_text {
+    width: 100%;
+  }
+  .about_wrapper {
+    padding: 0 10px;
+    width: 100%;
+  }
+  .about_section_title {
+    width: 100%;
+  }
+  .about_description {
+    width: 100%;
+  }
+  .about_title {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .houseplant_png {
+    margin-bottom: -70px;
+  }
+  .service_wrapper {
+    padding: 0 10px;
+  }
+  .services_items{
+    padding: 0;
+    grid-template-columns: 100%;
+  }
+  .services_button {
+    display: block;
+  }
+  .item_title_description {
+    width: 100%;
+  }
+  .img_items {
+    width: 100%;
+  }
+  .img_items img{
+    width: 100%;
+  }
+  .prices_wrapper {
+    padding: 0 10px;
+  }
+  .contact_us_wrapper {
+    padding: 0 10px;
+  }
+  .text_city {
+    width: 100%;
+  }
+  .accordion_btn_city {
+    left: 80%;
+    
+  }
+  .prices_info {
+    width: 100%;
+  }
+  .prices_item {
+    width: 100%;
+  }
+  .prices_items {
+    width: 100%;
+    margin: 0;
+    row-gap: 24%;
+  }
+  .block_right {
+    width: 100%;
+  }
+  .text_call_us {
+    width: 100%;
+  }
+  .text_title_gardeners {
+    width: 100%;
+  }
+  .footer {
+    padding: 0 10px;
+  }
+  /*contact_us*/
+  .contacts_container {
+    width: 85%;
+  }
+  .footer_wrapper {
+    width: 100%;
+  }
+  .column-left {
+    width: 100%;
+    text-align: center;
+  }
+  .column_left_list {
+    width: 100%;
+  }
+  .column-center {
+    width: 100%;
+  }
+  .column-center a{
+    width: 100%;
+    text-align: center;
+  }
+  .column-right {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-top: auto;
+  }
+  .social_list {
+    width: 100%;
+  }
+
+}
+
 /*-----Media end------*/
 
  
