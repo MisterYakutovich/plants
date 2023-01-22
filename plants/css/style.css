@@ -40,13 +40,16 @@
     font-weight: 400;
     line-height: 50px;
     font-size: 16px;
-    min-width: 1440px;
+   /*min-width: 1440px;*/
     margin: 0px;
-    padding: 0px;
+    padding: 0px;  
   }
-  html {
+  html { 
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
+ 
+ 
   *,*::before,*::after{
     box-sizing: inherit;
   }
@@ -98,6 +101,34 @@
   }
   .header_link:hover, .header_link:focus, .header_link:active {
     color: #E06733;
+  }
+  .header_burger {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 24px;
+  }
+  .burger_line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0px;
+    left: 0px;
+    border: 2px solid #717171;
+  }
+  .burger_line_1 {
+    top: 0;
+  }
+  .burger_line_4 {
+    bottom: 0;
+  }
+  .burger_line_3 {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .burger_line_2 {
+    top: -50%;
+    transform: translateY(50%);
   }
 
   /*----section welcome-------*/
@@ -249,7 +280,8 @@
     height: 1300px;
     left: 0px;
     top: 0px;
-    background-color:#EDF2EC
+    background-color:#EDF2EC;
+
   }
   .service_wrapper {
     position: relative;
@@ -308,13 +340,13 @@
   .services_items {
     position: absolute;
     display: grid;
+   /* grid-template-columns: repeat(6,1fr);*/
     grid-template-columns: repeat(3,330px);
     grid-template-rows: 450px;
     column-gap: 117px;
     row-gap: 55px;
     top: 184px;
     height: 955px;
-    width: 1222px;
     text-align: center;
   }
   .img_items {
@@ -322,6 +354,7 @@
     width: 330px;
     height: 450px;
     margin: 0px;
+   /* grid-column: span 2;*/
   }
   .item_title_description {
     margin-top: 10px;
@@ -496,8 +529,8 @@
 }
 .contact_us_wrapper {
   max-width: 1222px;
-  height: 550px;
   margin: 0 auto;
+  height: 550px;
 }
 .contact_woman {
   position: relative;
@@ -573,8 +606,8 @@
   position: relative;
   top: 40px;
   max-width: 1222px;
-  height: 50px;
   margin: 0 auto;
+  height: 50px;
   border-width: medium;
  }
 .column-left { 
@@ -657,7 +690,737 @@
   margin: 0;
   height: 50px;
 }
+/*-----Media start------*/
+@media screen and (max-width:1200px) {
+ .wrapper {
+  padding: 0 50px;
+ }
+  /*-----welcome media-----*/
+  .welcome {
+    height: 420px;
+    background: #EDF2EC;
+  }
+  .welcome_wrapper {
+    height: 310px;
+    top: 40px;
+    padding: 0 50px;
+  }
+  .leafs_logo {
+    width: 280px;
+    height: 254.15px;
+    order: 2;
+  }
+  .welcome_section_title {
+    width: 346px;
+    height: 310px;
+    top: 0;
+    order: 1;
+  }
+  .title {
+    width: 341px;
+    top: -36px;
+    font-size: 35px;
+  }
+  .description {
+    width: 341px;
+  }
+  .description_text {
+    font-size: 16px;
+    line-height: 25px;
+    width: 341px;
+  }
+  .button {
+    top: 266px;
+    
+  }
+  /*--------about media--------*/
+  .about {
+    height: 783px;
+  }
+  .about_wrapper {
+    padding: 0 50px;
+    height: 350px;
+    top: 40px;
+  }
+  .about_section_title {
+    top: 0px;
+  }
+  .about_title {
+    width: 423px;
+    font-size: 35px;
+    line-height: 46px;
+    text-align: center;
+    top: 0;
+    margin: auto;
+  }
+  .about_description {
+    width: 668px;
+    top: 59px;
+  }
+  .houseplant_png {
+    position: relative;
+    display: block;
+    width: 250px;
+    height: 258px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 40px; 
+  }
+  /*------servis media-----*/
+  .service {
+    height: 1780px;
+  }
+  .service_wrapper {
+    padding: 0 50px;
+    top: 60px;
+    height: 1650px;
+  }
+  .services_content {
+    display: inline-block;
+    width: 559px;
+    height: 184px;
+  }
+  .services_text {
+    font-size: 35px;
+    line-height: 46px;
+  }
+  .services_button {
+    top: 134px;
+  }
+  .services_items {
+    top: 224px;
+  }
+  .services_items {
+    height: 1426px;
+    grid-template-columns:repeat(2, 0fr);
+    /*grid-template-columns: repeat(2,280px);*/
+    row-gap: 38px;
+    column-gap: 107px;
+  }
+  .img_items {
+    width: 280px;
+    border-radius: 20px 20px 20px 20px;
+    border: 1px solid #E3E1D5;
+   /* grid-column: span 3;*/
+  }
+  .img_items img {
+    width: 280px;
+    border-radius: 20px 20px 0 0;  
+  }
+  /*-----prices medium----*/
+  .prices {
+    height: 585px;
+  }
+  .prices_wrapper {
+    height: 456px;
+    padding: 0 50px;
+  }
+  .prices_item {
+    height: 282px;
+    top: 50px;
+  }
+  .prices_info h2 {
+    font-size: 35px;
+    line-height: 42px;
+  }
+ .block_right {
+  position: relative;
+  width: 296px;
+  height: 357.98px;
+  top: 100px;
+ }
+ .text_title_gardeners {
+  width: 296px;
+  height: 77.41px;
+  font-size: 25px;
+  line-height: 35px;
+ }
+ .text_call_us {
+  width: 296px;
+ }
+ .button_contact_us {
+  top: 21.59px;
+ }
+ .leafs_logo_small {
+  top: 0;
+ }  
 
+ /*-----contact us media-----*/
+ .contact_us {
+  height: 739px;
+ }
+ .contact_us_wrapper {
+  height: 100%;
+  padding: 0 50px;
+ }
+ .contact_woman {
+  width: 200px;
+  height: 248.99px;
+  top: 487px;
+  left: 244px;
+ }
+ .contact_woman img {
+  width: 200px;
+  height: 248.99px;
+ /* margin: 487px 224px 0 244px ;*/
+ 
+ }
+ .contacts_container {
+  position: absolute;
+  right: 20.81%;
+  bottom: 498px;
+ }
+ .text_contact_us {
+  position: absolute;
+  top: 40px;
+  left: 287px;
+ }
+ /*----foter media----*/
+ .footer {
+  height: 181px;
+  padding: 0 50px;
+ }
+ .footer_wrapper {
+  display: block;
+  width: 210px;
+  height: 130px;
+  margin: 0px 229px 0px 229px;
+  top: 32.51px;
+ }
+ .column-left {
+  width: 210px;
+  height: 24px;
+ }
+ .column_left_list {
+  width: 210px;
+  height: 24px;
+
+ }
+ .left_list_item span {
+  line-height: 24px;
+ }
+ .left_list_item, .github {
+  line-height: 24px;
+ }
+ .left_list_item:last-child {
+  margin-right: 19px;
+ }
+ .left_list_item:first-child {
+  margin-left: 13px;
+ }
+ .column-center a {
+  display: inline-block;
+  width: 210px;
+  height: 24px;
+  line-height: 24px;
+  margin-top: 16px;
+ }
+ .column-right {
+  margin-top: 10px;
+  float: none;
+  bottom: 18px;
+  align-items: center;
+ }
+ .social_list {
+  top: 16px;
+ }
+ .social_list li {
+ line-height: 24px;
+ margin-right: 30px;
+ }
+ .social_list li:first-child {
+  margin-left: 2.66px;
+ }
+ .social_list li:last-child {
+  margin-right: 2.66px;
+ }
+
+}
+@media screen and (max-width:767px) {
+  .header {
+    height: 96px;
+  }
+  .wrapper {
+    padding: 0 25px;
+  }
+  .header_wrapper {
+    height: 47px;
+  }
+  .header_burger {
+    display: block;
+  }
+  .navbar {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #717171;
+    padding: 50px;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: .2s all linear;
+  }
+  .navbar_active {
+    transform: translateX(0);
+  }
+  .header_list {
+    position: absolute;
+    top: 150px;
+  }
+  .header_item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .header_item:last-child {
+    margin-bottom: 0;
+  }
+  .header_link {
+    font-size: 35px;
+  }
+  .header_link_home {
+    font-size: 35px;
+  }
+  .header_nav_close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    float: right;
+    z-index: 12;
+  }
+  .header_close_line {
+    width: 100%;
+    display: block;
+    background-color: #E06733;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+  }
+  .header_close_line:first-child {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .header_close_line:last-child {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  /*---welkome media 380px---*/
+  .welcome {
+    height: 300px;
+  }
+  .welcome_wrapper {
+    height: 252px;
+    padding: 0 28.5px;
+    top: 24px;
+    left: 0;
+  }
+  .leafs_logo {
+    display: none;
+  }
+  .welcome_section_title {
+    width: 330px;
+    height: 252px;
+    top: 0px;
+  }
+  .title {
+    width: 330px;
+    height: 72px;
+    font-size: 25px;
+    line-height: 35px;
+    top: 0;
+    margin-bottom: 20.36px;
+  }
+  .description {
+    width: 314.52px;
+    height: 105.42px;
+    margin-top: 0;
+  }
+  .description_text {
+    width: 314.52px;
+  }
+  .button {
+    position: absolute;
+    width: 100px;
+    height: 34.14px;
+    top: 217px;
+    font-size: 10px;
+  }
+  /*----about media 767px---*/
+  .about {
+    height: 516px;
+  }
+  .about_wrapper {
+    padding: 0 25px;
+    height: 455px;
+    top: 30px;
+  }
+  .about_section_title {
+    width: 330px;
+    height: 307.67px;
+    top: 0;
+  }
+  .about_title {
+    width: 288px;
+    height: 58px;
+    font-size: 25px;
+    line-height: 33px;
+    top: 0;
+    margin-left: 21px;
+  }
+  .about_description {
+    width: 330px;
+    height: 228.38px;
+    margin-bottom: 0;
+    
+  }
+  .about_description_text {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0;
+    height: 228.38px;
+  }
+  .houseplant_png {
+    width: 150px;
+    height: 147px;
+    margin-top: 0px;
+    top: 0;
+  }
+  /*----services media 767px---*/
+  .service {
+    height: 3150px;
+  }
+  .service_wrapper {
+    padding: 0 25px;
+    top: 30px;
+    height: 3092px;
+  }
+  .services_content {
+    height: 183px;
+    width: 252px;
+    top: -8px;
+  }
+  .services_text {
+    font-size: 25px;
+    line-height: 33px;
+    width: 187px;
+    height: 69px;
+    top: 0;
+    margin: 0;
+  }
+  .services_button {
+    width: 252px;
+    height: 79px;
+    top: 104px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .button_item {
+    width: 121px;
+    height: 35px;
+    margin-right: 10px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .services_items {
+    display: grid;
+    grid-template-columns: 279px;
+    height: 2870px;
+    top: 253px;
+    row-gap: 34px;
+    grid-template-rows: 450px;
+    padding: 0 25px;
+  }
+  .img_items {
+    /*grid-column: span 4;*/
+    height: 350px;
+    width: 279px;
+  }
+  /*prices media 767px----*/
+  .prices {
+    height: 512px;
+    background: #FFFFFF;
+  }
+  .prices_wrapper {
+    padding: 0 25px;
+    margin: 0;
+    top: 0;
+    height: 512px;
+  }
+  .prices_info {
+    width: 224px;
+    height: 302px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 25px;
+   
+  }
+  .prices_info h2 {
+    font-size: 25px;
+    line-height: 30px;
+    width: 90px;
+    height: 27px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .prices_item {
+    margin-left: auto;
+    margin-right: auto;
+    width: 224px;
+    height: 235px;
+    top: 40px;
+  }
+  .prices_items {
+    width: 180px;
+    height: 177px;
+    margin: 29px 22px 29px 22px;
+    grid-template-rows: repeat(3,49.72px);
+    row-gap: 13.92px;
+  }
+  .rectangle .item {
+    font-size: 15px;
+    top: 15.91px;
+    width: 89px;
+    height: 17.9px;
+    left: 30px;
+  }
+  .accordion_btn {
+    left: 124px;
+    padding: 3px;
+  }
+  .leafs_logo_small {
+    display: none;
+  }
+  .block_right {
+    width: 230px;
+    height: 126px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+  }
+  .text_call_us {
+    width: 230px;
+    height: 77px;
+  }
+  .text_title_gardeners {
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    width: 230px;
+    height: 77px;
+  }
+  .button_contact_us {
+    display: block;
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 20px;
+    float: none;
+    top: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  /*---contact us media 787px---*/
+  .contact_us {
+    height: 445px;
+  }
+  .contact_us_wrapper {
+    padding: 0 25px;
+  }
+  .contact_woman {
+    width: 100px;
+    height: 124.25px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    top: 320.75px;
+  }
+  .contact_woman img{
+    width: 100px;
+    height: 124.25px;
+  }
+  .contacts_container {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 114px;
+    right: 0;
+    bottom: 0;
+    float: none;
+   /*right: 42px;
+    bottom: 256px;*/
+  }
+  .accordion_btn_city {
+    left: 264px;
+    padding: 3px;
+  }
+  .text_contact_us {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -119px;
+    width: 192px;
+    height: 34px;
+    left: 0;
+  }
+  .text_contact_us h2 {
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+  }
+  /*---footer media---*/
+  .footer {
+    display: block;
+    position: relative;
+    height: 146px;
+    padding: 0 25px;
+  }
+  .footer_wrapper {
+    width: 210px;
+    height: 117px;
+    margin: 0 auto;
+    top: 22px;
+  }
+  .left_list_item:first-child {
+    margin-left: 18px;
+  }
+  .column-center {
+    width: 210px;
+  }
+  .column-right {
+    width: 188px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  .social_list li:last-child {
+    margin-right: 2.71px;
+  }
+}
+@media screen and (max-width:360px){
+  .welcome_wrapper {
+    padding: 0 10px;
+  }
+  .welcome_section_title {
+    width: 100%;
+  }
+  .title {
+    width: 100%;
+  }
+  .description {
+    width: 100%;
+  }
+  .description_text {
+    width: 100%;
+  }
+  .about_wrapper {
+    padding: 0 10px;
+    width: 100%;
+  }
+  .about_section_title {
+    width: 100%;
+  }
+  .about_description {
+    width: 100%;
+  }
+  .about_title {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .houseplant_png {
+    margin-bottom: -70px;
+  }
+  .service_wrapper {
+    padding: 0 10px;
+  }
+  .services_items{
+    padding: 0;
+    grid-template-columns: 100%;
+  }
+  .services_button {
+    display: block;
+  }
+  .item_title_description {
+    width: 100%;
+  }
+  .img_items {
+    width: 100%;
+  }
+  .img_items img{
+    width: 100%;
+  }
+  .prices_wrapper {
+    padding: 0 10px;
+  }
+  .contact_us_wrapper {
+    padding: 0 10px;
+  }
+  .text_city {
+    width: 100%;
+  }
+  .accordion_btn_city {
+    left: 80%;
+    
+  }
+  .prices_info {
+    width: 100%;
+  }
+  .prices_item {
+    width: 100%;
+  }
+  .prices_items {
+    width: 100%;
+    margin: 0;
+    row-gap: 24%;
+  }
+  .block_right {
+    width: 100%;
+  }
+  .text_call_us {
+    width: 100%;
+  }
+  .text_title_gardeners {
+    width: 100%;
+  }
+  .footer {
+    padding: 0 10px;
+  }
+  /*contact_us*/
+  .contacts_container {
+    width: 85%;
+  }
+  .footer_wrapper {
+    width: 100%;
+  }
+  .column-left {
+    width: 100%;
+    text-align: center;
+  }
+  .column_left_list {
+    width: 100%;
+  }
+  .column-center {
+    width: 100%;
+  }
+  .column-center a{
+    width: 100%;
+    text-align: center;
+  }
+  .column-right {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-top: auto;
+  }
+  .social_list {
+    width: 100%;
+  }
+
+}
+
+/*-----Media end------*/
 
  
 
