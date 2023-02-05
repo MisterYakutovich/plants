@@ -331,9 +331,13 @@
   }
   .button_item:hover {
     background-position: 0 100%;
-    background-color: #499A18;
+    background-color: #E06733;
+    color: #FFFFFF;
   }
-
+  .active {
+    background-color: #E06733;
+    color: #FFFFFF;
+  }
   .button_item:last-child {
     margin-right: 0px;
   }
@@ -355,6 +359,9 @@
     height: 450px;
     margin: 0px;
    /* grid-column: span 2;*/
+  }
+  .hidden {
+    filter: blur(2px);
   }
   .item_title_description {
     margin-top: 10px;
@@ -557,18 +564,104 @@
   color: #499A18;
   text-align: center;
 }
-.contacts_container {
-  position: relative;
+.contacts_container { 
   width: 450px;
-  height: 50px;
-  bottom: 402px;
+  height: 50px; 
   float: right;
   background: #D6E7D2;
   box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+  border: 0px;
+  cursor: pointer;
+  appearance: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  color: #717171;
+  letter-spacing: 0.05em;
+  padding: 5px 250px 5px 20px;
+}
+.contacts_container:hover{
+  background: #C1E698;
+  border: 1px solid #D6E7D2;
   border-radius: 0px;
+  transition: all 1000ms ease;
+}
+.contacts_container option {
+  max-width: 142px;
+  height: 35px;
+}
+.name_id_city{
+  position: relative;
+  float: right; 
+  border: 0;
+  margin: 0;
+  padding: 0;
+  max-width: 450px;
+  height: 50px;
+  border: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  bottom: 402px;
+}
+.adresses_city_phone_block {
+  width: 448px;
+  height: 214px;
+  padding: 17px 76px 32px 33px;
+  margin-top: 67px;
+  background: #EDF2EC;
+  border: 1px solid #000000;
+  border-radius: 20px;
+}
+.adress_block_item {
+  padding-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.left_block_item {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.right_block_item {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #717171;
+  background: transparent;
+  border: 0;
+}
+.btn_call_us {
+  width: 122px;
+  height: 26px;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 130px;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+  color: #717171;
   cursor: pointer;
 }
-.text_city {
+
+/*.text_city {
   position: relative;
   left: 20px;
   top: 5px;
@@ -582,10 +675,10 @@
   letter-spacing: 0.05em;
   color: #717171;
   margin: 0px;
-}
+}*/
 .accordion_btn_city {
   position: relative;
-  bottom: 23px;
+  bottom: -16px;
   left: 400px;
   width: 2px;
   height: 2px;
@@ -797,6 +890,10 @@
     row-gap: 38px;
     column-gap: 107px;
   }
+  .active {
+    background-color: #E06733;
+    color: #FFFFFF;
+  }
   .img_items {
     width: 280px;
     border-radius: 20px 20px 20px 20px;
@@ -870,6 +967,36 @@
   right: 20.81%;
   bottom: 498px;
  }
+ .name_id_city {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 356px;
+  width: 100%;
+}
+.contacts_container {
+  position: relative;
+  max-width: 450px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  right: 0;
+  bottom: 50px;
+  float: none;
+}
+.adresses_city_phone_block {
+  width: 448px;
+  height: 214px;
+  padding: 17px 76px 32px 33px;
+  margin-top: 0px;
+  background: #EDF2EC;
+  border: 1px solid #000000;
+  border-radius: 20px;
+}
+.accordion_btn_city {
+  bottom: 83px;
+}
  .text_contact_us {
   position: absolute;
   top: 40px;
@@ -1114,6 +1241,10 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
+  .active {
+    background-color: #E06733;
+    color: #FFFFFF;
+  }
   .button_item {
     width: 121px;
     height: 35px;
@@ -1242,7 +1373,7 @@
   }
   .contacts_container {
     position: relative;
-    width: 300px;
+    max-width: 450px;
     height: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -1253,9 +1384,24 @@
    /*right: 42px;
     bottom: 256px;*/
   }
+  .select_city {
+      height: 120px;     
+  }
+  .name_id_city {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 356px;
+    width: 100%;
+  }
+  .adresses_city_phone_block {
+    margin-top: 60px;
+  }
   .accordion_btn_city {
-    left: 264px;
+    margin-left: 400px;
     padding: 3px;
+    left: 0;
+    bottom: -13px;
   }
   .text_contact_us {
     position: relative;

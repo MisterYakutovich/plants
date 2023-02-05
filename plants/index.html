@@ -163,10 +163,78 @@
                 <div class="text_contact_us">
                     <h2>Contact us</h2>
                 </div>
-                <div class="contacts_container">
-                    <p class="text_city">City</p>           
+                <fieldset class="name_id_city">
+                    <div class="select_city">
+                        <select name="city" id="city" class="contacts_container" onChange="Selected(this)">
+                            <option value="city" class="contacts_container_item">City</option>
+                            <option value="canandaigua" class="contacts_container_item">Canandaigua, NY</option>
+                            <option value="newyork" class="contacts_container_item">New York City</option>
+                            <option value="yonkers" class="contacts_container_item">Yonkers, NY</option>
+                            <option value="sherrill" class="contacts_container_item">Sherrill, NY</option>
+                        </select>
+                    </div>
+                    <div class="adresses_city_phone_block" id='Block1' style='display: none;'>
+                        <div class="adress_block_item">
+                            <label for="city" class="left_block_item">City:</label>
+                            <input id="city" type="text" class="right_block_item" value="Canandaigua, NY">
+                        </div>
+                        <div class="adress_block_item">
+                            <label for="phone" class="left_block_item">Phone:</label>
+                            <input id="phone" type="text" class="right_block_item" value="+1 585 393 0001">
+                        </div>
+                        <div class="adress_block_item">
+                            <label for="office_adress" class="left_block_item">Office adress:</label>
+                            <input id="office_adress" type="text" class="right_block_item" value="151 Charlotte Street">
+                        </div>
+                        <button type="button" class="btn_call_us">Call us</button>
+                    </div>
+                    <div class="adresses_city_phone_block" id='Block2' style='display: none;'>
+                        <div class="adress_block_item">
+                            <label for="city" class="left_block_item">City:</label>
+                            <input id="city" type="text" class="right_block_item" value="New York City">
+                        </div>
+                        <div class="adress_block_item">
+                            <label for="phone" class="left_block_item">Phone:</label>
+                            <input id="phone" type="text" class="right_block_item" value="+1 212 456 0002">
+                        </div>
+                        <div class="adress_block_item">
+                            <label for="office_adress" class="left_block_item">Office adress:</label>
+                            <input id="office_adress" type="text" class="right_block_item" value="9 East 91st Street">
+                        </div>
+                        <button type="button" class="btn_call_us">Call us</button>
+                    </div>
+                    <div class="adresses_city_phone_block" id='Block3' style='display: none;'>
+                        <div class="adress_block_item">
+                            <label for="city" class="left_block_item">City:</label>
+                            <input id="city" type="text" class="right_block_item" value="Yonkers, NY">
+                        </div>
+                        <div class="adress_block_item">
+                            <label for="phone" class="left_block_item">Phone:</label>
+                            <input id="phone" type="text" class="right_block_item" value="+1 914 678 0003">
+                        </div>
+                        <div class="adress_block_item">
+                            <label for="office_adress" class="left_block_item">Office adress:</label>
+                            <input id="office_adress" type="text" class="right_block_item" value="511 Warburton Ave">
+                        </div>
+                        <button type="button" class="btn_call_us">Call us</button>
+                    </div>
+                    <div class="adresses_city_phone_block" id='Block4' style='display: none;'>
+                        <div class="adress_block_item">
+                            <label for="city" class="left_block_item">City:</label>
+                            <input id="city" type="text" class="right_block_item" value="Sherrill, NY">
+                        </div>
+                        <div class="adress_block_item">
+                            <label for="phone" class="left_block_item">Phone:</label>
+                            <input id="phone" type="text" class="right_block_item" value="+1 315 908 0004">
+                        </div>
+                        <div class="adress_block_item">
+                            <label for="office_adress" class="left_block_item">Office adress:</label>
+                            <input id="office_adress" type="text" class="right_block_item" value="14 WEST Noyes BLVD">
+                        </div>
+                        <button type="button" class="btn_call_us">Call us</button>
+                    </div>
                     <div class="accordion_btn_city"></div>
-                </div>              
+                </fieldset>              
             </div>
         </section>
     </main>
@@ -209,5 +277,6 @@
         </div>
     </footer>
     <script  src="index.js"></script>
+    <script  src="index1.js"></script>
 </body>
 </html>
