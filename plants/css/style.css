@@ -1482,6 +1482,36 @@
     height: 235px;
     top: 40px;
   }
+  .rectangle_basics {
+    width: 180px;
+  }
+  .rectangle_basics_item2 p {
+    width: 100%;
+    margin-top: -2px;
+  }
+  .rectangle_basics_item4 button {
+    margin-top: 0px;
+  }
+  .rectangle_standard {
+    width: 180px;
+  }
+  .rectangle_standard_item2 p {
+    width: 100%;
+    margin-top: -2px;
+  }
+  .rectangle_standard_item4 button {
+    margin-top: 0px;
+  }
+  .rectangle_pro_care {
+    width: 180px;
+  }
+  .rectangle_pro_care_item2 p {
+    width: 100%;
+    margin-top: -2px;
+  }
+  .rectangle_pro_care_item4 button {
+    margin-top: 0px;
+  }
   .prices_items {
     width: 180px;
     height: 177px;

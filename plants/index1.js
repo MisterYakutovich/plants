@@ -106,13 +106,19 @@ function Selected(a) {
     if (label=="canandaigua") {
        document.getElementById("Block1").style.display='block';
        document.getElementById("Block2").style.display='none';
+       document.getElementById("Block3").style.display='none';
+       document.getElementById("Block4").style.display='none';
+
     } else if (label=="newyork") {
        document.getElementById("Block1").style.display='none';
-        document.getElementById("Block2").style.display='block';   
+        document.getElementById("Block2").style.display='block';
+        document.getElementById("Block3").style.display='none';
+        document.getElementById("Block4").style.display='none';
     } else if (label=="yonkers") {
         document.getElementById("Block1").style.display='none';
         document.getElementById("Block2").style.display='none';
         document.getElementById("Block3").style.display='block';
+        document.getElementById("Block4").style.display='none';
     }else if (label=="sherrill"){
         document.getElementById("Block1").style.display='none';
         document.getElementById("Block2").style.display='none';
@@ -129,8 +135,8 @@ function Selected(a) {
 function showHide(element_id) {
     if (document.getElementById(element_id)) {    
         var obj = document.getElementById(element_id); 
-        if (obj.style.display != "block") { 
-            obj.style.display = "block";
+        if (obj.style.display != "grid") { 
+            obj.style.display = "grid";
         }
         else obj.style.display = "none";
     }
