@@ -360,7 +360,7 @@
     margin: 0px;
    /* grid-column: span 2;*/
   }
-  .hidden {
+  .hidden_blur {
     filter: blur(2px);
   }
   .item_title_description {
@@ -455,6 +455,9 @@
 .rectangle {
   border-radius: 20px;
   background: #EDF2EC; 
+}
+.rectangle_hidden{
+  display: none;
 }
 .rectangle_basics {
   position: relative;
@@ -1135,7 +1138,9 @@
   width: 200px;
   height: 248.99px;
   top: 487px;
-  left: 244px;
+ /* left: 244px;*/
+  margin-left: auto;
+  margin-right: auto;
  }
  .contact_woman img {
   width: 200px;
@@ -1182,6 +1187,7 @@
   position: absolute;
   top: 40px;
   left: 287px;
+ 
  }
  /*----foter media----*/
  .footer {
@@ -1584,7 +1590,7 @@
   }
   .contacts_container {
     position: relative;
-    max-width: 450px;
+    max-width: 100%;
     height: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -1596,22 +1602,35 @@
     bottom: 256px;*/
   }
   .select_city {
-      height: 120px;     
+      height: 120px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
   }
   .name_id_city {
     float: none;
     margin-left: auto;
     margin-right: auto;
     margin-top: 356px;
-    width: 100%;
+    min-width: 100%;
   }
   .adresses_city_phone_block {
+    max-width: 100%;
     margin-top: 60px;
+    padding: 10px;
   }
+  .btn_call_us {
+    position: relative;
+    width: 122px;
+    height: 26px;
+    margin-left: 130px;
+    margin-top: 0px;
+  }
+  
   .accordion_btn_city {
-    margin-left: 400px;
+    /*margin-left: 260px;*/
     padding: 3px;
-    left: 0;
+    left: 390px;
     bottom: -13px;
   }
   .text_contact_us {
@@ -1655,6 +1674,25 @@
   .social_list li:last-child {
     margin-right: 2.71px;
   }
+}
+@media  screen and (max-width:460px) {
+  .accordion_btn_city { 
+    left: 350px; 
+  }
+}
+@media  screen and (max-width:420px) {
+  .accordion_btn_city {
+    left: 300px; 
+  }
+}
+@media  screen and (max-width:389px){
+  .btn_call_us {
+    position: relative;
+    width: 122px;
+    height: 26px;
+    bottom: 20px;
+  }
+  
 }
 @media screen and (max-width:360px){
   .welcome_wrapper {
@@ -1746,7 +1784,7 @@
   }
   /*contact_us*/
   .contacts_container {
-    width: 85%;
+    max-width: 100%;
   }
   .footer_wrapper {
     width: 100%;
